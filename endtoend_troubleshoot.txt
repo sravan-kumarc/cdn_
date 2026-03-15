@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => ({
 
 npm run build
 snake-gameskc/
-├── index.html    
+├── index.html  (below lines will be configured in index.html itself)  
 |       #<script type="module" crossorigin src="/assets/index-ZaFLWMLh.js"></script>
 |       #<link rel="stylesheet" crossorigin href="/assets/index-DO3shsKP.css">
 └── assets/
@@ -22,3 +22,18 @@ INVALIDATE CACHE (MANDATORY)
 
 /*
 ______________________________________________________________
+
+
+S3 static 
+
+do --> "npm install" at repo
+--> npm run build
+
+later dist file will be generated, add below files and check acl permissions too.
+dist/
+├── index.html  (below lines will be configured in index.html itself)  
+|       #<script type="module" crossorigin src="/assets/index-ZaFLWMLh.js"></script>
+|       #<link rel="stylesheet" crossorigin href="/assets/index-DO3shsKP.css">
+└── assets/
+    ├── index-XXXX.js
+    └── index-XXXX.css
